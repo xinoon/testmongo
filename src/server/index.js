@@ -21,18 +21,6 @@ app.use((req, res, next) => {
   next();
   })
 app.use(BodyParser.urlencoded({ extended: true }));
-app.use((req, resp, next)=>{
-  let usuario = new Person(req.body);
-  let error = usuario.validateSync();
-  if(error){
-     console.log("----||| ERROR ||-----");
-     return resp.status(400).json({
-        ok: false,
-        err: error
-     });
-  }
-  next();
-});
 app.use(require("../service/helpcheck"));
 app.use(require("../service/Person"));
 
