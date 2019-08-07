@@ -1,0 +1,1 @@
+process.env.STATUS = process.env.STATUS || 'START'
