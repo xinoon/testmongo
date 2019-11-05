@@ -17,7 +17,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.6.8",
+    "mongoose": "^5.7.5",
     "mongoose-validator": "^2.1.0"
   },
   "description": "[![Build Status](https://travis-ci.org/mjhea0/node-koa-api.svg?branch=master)](https://travis-ci.org/mjhea0/node-koa-api)",
